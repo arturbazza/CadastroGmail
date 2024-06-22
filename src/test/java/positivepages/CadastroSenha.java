@@ -14,17 +14,16 @@ public class CadastroSenha {
 
     public CadastroSenha(WebDriver driver){
         this.driver = driver;
-        this.wait = new WebDriverWait(driver, Duration.ofSeconds(5));
+        this.wait = new WebDriverWait(driver, Duration.ofSeconds(10));
     }
-
     public void preencherCampo(){
         WebElement senha = wait.until(ExpectedConditions.visibilityOfElementLocated(By.name("Passwd")));
-        senha.sendKeys("Artur1975.");
+        senha.sendKeys("1975Fundatec.");
 
         WebElement confirmacao = wait.until(ExpectedConditions.visibilityOfElementLocated(By.name("PasswdAgain")));
-        confirmacao.sendKeys("Artur1975.");
+        confirmacao.sendKeys("1975Fundatec.");
 
-        WebElement botaoAvancar = driver.findElement(By.xpath("//span[contains(text(),'Avançar')]"));
-        botaoAvancar.click();
+        WebElement btAvancar = driver.findElement(By.xpath("//span[contains(text(),'Avançar')]"));
+        btAvancar.click();
     }
 }

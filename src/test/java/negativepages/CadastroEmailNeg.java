@@ -26,4 +26,10 @@ public class CadastroEmailNeg {
         WebElement botaoAvancar = wait.until(ExpectedConditions.visibilityOfElementLocated(By.xpath("//span[contains(text(),'Avançar')]")));
         botaoAvancar.click();
     }
+
+    public String validarMensagemGoogleEmail() {
+        WebDriverWait wait = new WebDriverWait(driver, Duration.ofSeconds(10));
+        wait.until(ExpectedConditions.visibilityOfElementLocated(By.xpath("//div[contains(text(),'Digite um endereço do Gmail')]")));
+        return driver.findElement(By.xpath("//div[contains(text(),'Digite um endereço do Gmail')]")).getText();
+    }
 }

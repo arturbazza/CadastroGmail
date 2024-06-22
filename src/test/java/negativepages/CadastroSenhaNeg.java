@@ -25,4 +25,10 @@ public class CadastroSenhaNeg {
         WebElement botaoAvancar = driver.findElement(By.xpath("//span[contains(text(),'Avançar')]"));
         botaoAvancar.click();
     }
+
+    public String validarMensagemGoogleSenha() {
+        WebDriverWait wait = new WebDriverWait(driver, Duration.ofSeconds(10));
+        wait.until(ExpectedConditions.visibilityOfElementLocated(By.xpath("//span[contains(text(),'Digite uma senha')]")));
+        return driver.findElement(By.xpath("//span[contains(text(),'Digite uma senha')]")).getText();
+    }
 }

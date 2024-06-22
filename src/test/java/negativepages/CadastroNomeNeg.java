@@ -19,4 +19,7 @@ public class CadastroNomeNeg {
         WebElement botaoAvancar = driver.findElement(By.xpath("//span[contains(text(),'Avançar')]"));
         botaoAvancar.click();
     }
+    public String validarMensagemGoogleNome() {
+        return driver.findElement(By.xpath("//span[contains(text(),'Digite o nome')]")).getText();
+    }
 }

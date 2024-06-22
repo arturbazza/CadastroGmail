@@ -22,7 +22,7 @@ public class CadastroEmail {
         seletor.click();
 
         WebElement email = wait.until(ExpectedConditions.visibilityOfElementLocated(By.name("Username")));
-        email.sendKeys("arturbazza.12.03");
+        email.sendKeys("arturbazza.12.03.1975");
 
         WebElement botaoAvancar = wait.until(ExpectedConditions.visibilityOfElementLocated(By.xpath("//span[contains(text(),'Avançar')]")));
         botaoAvancar.click();

@@ -37,6 +37,8 @@ public class CadastroSenhaTestNeg {
         cadastroData.preencherCampo();
         cadastroEmail.preencherCampo();
         cadastroSenhaNeg.preencherCampo();
+
+        cadastroSenhaNeg.validarMensagemGoogleSenha();
     }
 
     @After

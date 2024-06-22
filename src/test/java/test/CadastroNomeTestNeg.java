@@ -10,12 +10,9 @@ import negativepages.CadastroNomeNeg;
 public class CadastroNomeTestNeg {
     static WebDriver driver;
     static CadastroNomeNeg cadastroNomeNeg;
-
-
     @Before
     public void setUp() throws Exception {
     }
-
     @Test
     public void test(){
         System.setProperty("webdriver.chrome.driver", "C:\\chromedriver-win64\\chromedriver.exe");
@@ -24,6 +21,8 @@ public class CadastroNomeTestNeg {
 
         cadastroNomeNeg = new CadastroNomeNeg(driver);
         cadastroNomeNeg.preencherCampo();
+
+        cadastroNomeNeg.validarMensagemGoogleNome();
     }
 
     @After
