@@ -1,4 +1,4 @@
-package test;
+package test.positive;
 
 import org.junit.After;
 import org.junit.Before;
@@ -29,13 +29,13 @@ public class CadastroNomeTestPos {
         cadastroData = new CadastroData(driver);
         cadastroEmail = new CadastroEmail(driver);
         cadastroSenha = new CadastroSenha(driver);
-        //cadastroPhone = new CadastroPhone(driver);
+        cadastroPhone = new CadastroPhone(driver);
 
         cadastroNome.preencherCampo();
         cadastroData.preencherCampo();
         cadastroEmail.preencherCampo();
         cadastroSenha.preencherCampo();
-        //cadastroPhone.preencherCampo();
+        cadastroPhone.preencherCampo();
     }
 
     @After

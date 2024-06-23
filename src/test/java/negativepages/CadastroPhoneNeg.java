@@ -1,4 +1,4 @@
-package positivepages;
+package negativepages;
 
 import org.openqa.selenium.By;
 import org.openqa.selenium.WebDriver;
@@ -8,22 +8,28 @@ import org.openqa.selenium.support.ui.WebDriverWait;
 
 import java.time.Duration;
 
-public class CadastroSenha {
+public class CadastroPhoneNeg {
     static WebDriver driver;
     static WebDriverWait wait;
-
-    public CadastroSenha(WebDriver driver){
+    public CadastroPhoneNeg(WebDriver driver){
         this.driver = driver;
         this.wait = new WebDriverWait(driver, Duration.ofSeconds(10));
     }
+
     public void preencherCampo(){
         WebElement senha = wait.until(ExpectedConditions.visibilityOfElementLocated(By.name("Passwd")));
-        senha.sendKeys("Fundatec1975.");
+        senha.sendKeys("");
 
         WebElement confirmacao = wait.until(ExpectedConditions.visibilityOfElementLocated(By.name("PasswdAgain")));
-        confirmacao.sendKeys("Fundatec1975.");
+        confirmacao.sendKeys("");
 
-        WebElement btAvancar = driver.findElement(By.xpath("//span[contains(text(),'Avançar')]"));
-        btAvancar.click();
+        WebElement botaoAvancar = driver.findElement(By.xpath("//span[contains(text(),'Avançar')]"));
+        botaoAvancar.click();
+    }
+
+    public static String validarMensagemGooglePhone() {
+        WebDriverWait wait = new WebDriverWait(driver, Duration.ofSeconds(10));
+        wait.until(ExpectedConditions.visibilityOfElementLocated(By.xpath("//span[contains(text(),'Digite uma senha')]")));
+        return driver.findElement(By.xpath("//span[contains(text(),'Digite uma senha')]")).getText();
     }
 }
