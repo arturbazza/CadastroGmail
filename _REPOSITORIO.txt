@@ -2,15 +2,14 @@
 
 Testes automatizados na página de login para a criação de uma conta Google. E um teste de envio de mendagem para o site da Faculdades QI.
 
-Repositório:
+	- Repositório: https://github.com/arturbazza/CadastroGmail.git
 
-	- https://github.com/arturbazza/CadastroGmail.git
-	
-	
+	- Vídeos:https://github.com/arturbazza/CadastroGmail/tree/master/videosTestes
+
+
 #### Aluno: Artur Bazzanella Christmann
 #### Turma: TI23
 #### Professor: José Eduardo Sousa
 #### Escola Profissional Fundatec
 
-	
 	
