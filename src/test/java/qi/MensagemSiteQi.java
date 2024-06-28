@@ -47,8 +47,8 @@ public class MensagemSiteQi {
                 "\n" +
                 "Artur.\n");
 
-       // WebElement btAvancar = driver.findElement(By.xpath("//span[contains(text(),'Pronto, quero enviar a mensagem')]"));
-        //btAvancar.click();
+        WebElement btAvancar = driver.findElement(By.xpath("//span[contains(text(),'Pronto, quero enviar a mensagem')]"));
+        btAvancar.click();
 
     }
 }
