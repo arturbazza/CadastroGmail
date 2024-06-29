@@ -4,9 +4,14 @@ Testes automatizados na página de login para a criação de uma conta Google. E
 
 Repositório:
 
-	- https://github.com/arturbazza/CadastroGmail.git
+	- Repositório: https://github.com/arturbazza/CadastroGmail
+	    (Clonar: https://github.com/arturbazza/CadastroGmail.git)
 
-	- https://github.com/arturbazza/CadastroGmail/tree/master/videosTestes
+	- Vídeos: https://github.com/arturbazza/CadastroGmail/tree/master/_VideosTestes
+	    (Vídeos dos testes)
+
+	- Print Screem: https://github.com/arturbazza/CadastroGmail/tree/master/_PrintsScreens
+	    (Print dos testes e da resposta da QI)
 
 #### Aluno: Artur Bazzanella Christmann
 #### Turma: TI23
